@@ -1,0 +1,27 @@
+<!-- Button trigger modal -->
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <form #ModalForm="ngForm" (ngSubmit)="modalForm(ModalForm.value)">
+      <div>
+        <label for="title">
+          titre de la modal
+        </label>
+        <input type="text" name="title" class="form-control" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="text">
+          text de la modal
+        </label>
+        <input type="text" name="text" class="form-control" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="buttonText">
+          text du boutton de la modal
+        </label>
+        <input type="text" name="buttonText" class="form-control" ngModel>
+        </div>
+      <button type="submit" class="btn btn-success">envoyer le text</button>
+    </form>
+  </div>
+</div>
+
